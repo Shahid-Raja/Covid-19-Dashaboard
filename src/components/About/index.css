@@ -1,57 +1,77 @@
-.about-main-container {
-  background-color: #161625;
+.about-container {
+  background: #161625;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: flex-start;
   min-height: 100vh;
-  width: 100%;
-  margin-top: 60px;
+  padding: 15px;
 }
-@media screen and (max-width: 600px) {
-  .about-main-container {
-    margin-top: 0px;
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding: 30px;
   }
 }
 
-.about-content-container {
-  margin: 7px;
-  padding: 7px;
-}
-.loader-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 170px;
+.about-heading {
+  font-size: 40px;
+  line-height: 25px;
+  color: #f8fafc;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
-.about-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 64px;
-  color: #f8fafc;
+@media screen and (min-width: 768px) {
+  .about-heading {
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
 }
-.about-description {
-  font-family: Roboto;
+
+.about-date {
+  margin-left: 20px;
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 20px;
   color: #94a3b8;
 }
-.about-vaccine-title {
-  font-family: Roboto;
+
+@media screen and (min-width: 768px) {
+  .about-date {
+    margin-left: 100px;
+  }
+}
+
+.about-description {
+  margin-left: 20px;
+
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 20px;
+
   color: #e2e8f0;
 }
-.fact-list {
-  margin-top: 32px;
-  padding: 0;
-  list-style-type: none;
-  margin: 35px;
+
+@media screen and (min-width: 768px) {
+  .about-description {
+    margin-left: 100px;
+  }
+}
+
+.list-items-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-items-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
