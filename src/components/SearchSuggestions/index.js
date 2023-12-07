@@ -5,14 +5,17 @@ import {AiOutlineRight} from "react-icons/ai"
 import './index.css'
 
 const SearchSuggestions = props => (
-    const  {statesList} = props
+
+      const {statesList} = props
 
     return(
+
         <div>
             {statesList.map((eachState) => (
                 
                 <li>
-                <Link to={`/state/${eachState.state_code}`}></Link>
+                <Link to={`/state/${eachState.state_code}`}>
+                
                     <button>
                     
                         <p>{eachState.state_name}</p>
@@ -22,8 +25,10 @@ const SearchSuggestions = props => (
                             <AiOutlineRight />
                         </div>
                     </button>
-                    </li>
                 </Link>
+                 </li>
+                 
+               
             ))}
         </div>
     )
