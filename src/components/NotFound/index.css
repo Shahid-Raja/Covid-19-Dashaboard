@@ -1,14 +1,20 @@
-.not-found-container {
+.not-found-main-container {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #161625;
+}
+.not-found-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #161625;
+  margin-top: 0px;
+  padding: 12px;
 }
 
-.not-found-heading {
-  font-family: 'Roboto';
+.not-found-title {
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -17,34 +23,24 @@
   color: #cbd5e1;
 }
 
-.not-found-image {
-  width: 448px;
-  height: 295.73px;
-}
-
-.not-found-description {
-  width: 490px;
-  font-family: 'Roboto';
+.not-found-para {
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #94a3b8;
 }
 
-.not-found-button {
-  padding: 12px 24px;
-  width: 88px;
-  height: 48px;
+.home-button {
   background: #2563eb;
   border-radius: 12px;
   color: #ffffff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  cursor: pointer;
-  outline: none;
-  border: 0;
+  padding: 12px 24px;
+  border: none;
+}
+
+.button-container {
+  text-align: center;
 }
